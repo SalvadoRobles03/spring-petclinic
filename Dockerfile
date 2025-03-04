@@ -5,6 +5,7 @@ ENV PORT 8080
 WORKDIR /app
 
 COPY .mvn/ .mvn
+
 COPY mvnw pom.xml ./
 RUN ./mvnw dependency:resolve
 
